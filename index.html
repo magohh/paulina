@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paulina</title>
+<!--CSS-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="css/extra.css">
+<!--JS-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+</head>
+<body>
+	<audio id="myAudio">
+	<source src="retrato.mp3" type="audio/mpeg">
+	</audio>
+	<div class="bg1">
+		<div class="container">
+			<div class="row center-align height-100vh valign-wrapper margin-0">
+				<div class="col s12">
+					<p class="fz-3 text">Presiona los botones para reproducir o pausar el audio</p>
+					<button class="rep" onclick="playAudio()" type="button">Reproducir</button>
+					<button class="pau" onclick="pauseAudio()" type="button">Pausar</button> 
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<script>
+	var x = document.getElementById("myAudio"); 
+
+	function playAudio() { 
+	x.play(); 
+	} 
+
+	function pauseAudio() { 
+	x.pause(); 
+	} 
+	</script>
+</body>
+</html>
